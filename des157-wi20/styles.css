@@ -1,0 +1,79 @@
+@media only screen and (min-width: 600px) { 
+    main {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    article {
+        width: 25%;
+    }
+
+    body {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+body {
+    padding: 2em;
+}
+
+#mySketch {
+    height: 250px;
+    width: 800px;
+    border-style: solid;
+    border-color: #ef4136;
+    margin: auto;
+}
+article {
+    background-color: #e6f3e9;
+    padding: 1em;
+}
+
+#heading {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+    background: #ef4136;
+    margin-top: 2em;
+    color: #e6f3e9;
+}
+
+/*type*/
+
+h1, h2, a, p {
+    font-family: "Open+Sans", sans-serif;
+    color: #231f20;
+}
+
+h1 {
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+.lightlinks a {
+    color: #e6f3e9;
+}
+
