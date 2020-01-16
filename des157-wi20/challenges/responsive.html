@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Responsive Design</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Responsive Design</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">HTML Basics</a></li>
+                    <li><a href="cssbasics.html">CSS Basics</a></li>
+                    <li><a href="layout.html">Page Layout</a></li>
+                    <li><a href="responsive.html">Responsive Design</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h2>About Media Queries</h2>
+                <p>Media queries check the capabilities of the device being used to view a webpage. They check things like height and width of the viewport, height and width od the device, orientation, and resolution. Min-width media queries are rules that format for a mobile-first approach, or writing the deafult settings for a narrower screen size. The formatting is set to a minimum width with mobile settings, then anything larger than that minimum width is automatically formatted differently for laptop, tablet, and desktop screens. Max-width media queries set the formatting first for desktop screens, then call the settings for anything less than the maximum width.</p>
+                <p>The mobile-first approach is beneficial because code is called in the order that it is written, so designing for the mobile device formatting first decreases loading time. This is important because mobile users usually have less bandwidth and processing time makes a larger difference.</p>
+            </article>
+
+            <article>
+                <h2>Relative Units</h2>
+                <p>Relative units refer to things like ems, percentages, and vh and vw. A em is a unit relative to the font size of the element. If the font size is 10pt, 2em would be 20pt. Percentages are helpful in resizing the width and height of block elements on a page because they scale relatively with the viewport width and height. Vh and vw are relative to 1% of the viewport height and width, respectively. If the viewport is 70cm wide, 1 vw = 0.7cm.</p>
+            </article>
+
+            <article>
+                <h2>Meta Viewport Tag</h2>
+                <p>The meta viewport tag allows for responsive design because it sets the viewport to be the width of the device by default. This means the text on a webpage will be legible no matter what size the viewport is, as it responds to the viewport dimensions and resizes accordingly.</p>
+            </article>
+        </main>
+
+        <footer>
+            <p>Page by Olivia Kotlarek</p>
+            <p>Checked by Megan Frentzel and Aisleen Santos</p>
+            <a href="http://validator.w3.org/check?uri=referer">Valid HTML</a>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Basics</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>CSS Basics</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">HTML Basics</a></li>
+                    <li><a href="cssbasics.html">CSS Basics</a></li>
+                    <li><a href="layout.html">Page Layout</a></li>
+                    <li><a href="responsive.html">Responsive Design</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h2>Inheritance in CSS</h2>
+                <p>Inheritance refers to styles of defined elements carrying over to undefined elements in CSS based on the order they have been written and default styles. For example, if the font color for all type in the body of a page is defined as pink, all headings and paragraphs will be pink. There are some instances, however, where inheritance is overridden. If there is a link inserted into the body text, it will turn blue and have an underline applied to it because of the pre-defined styles inherent to links in HTML and CSS.</p>
+            </article>
+
+            <article>
+                <h2>Specificity in CSS</h2>
+                <p>Specificity refers to the rank or hierarchy of each style tag that determines which tag is applied to a given element. In some cases, the style that is defined last is the one that is applied. However, there are some tags that can override others regardless of order, like IDs and class attributes. A compound selector is more specific than using multiple selectors and can allow you to change the style of one specific element within a group with a defined style.</p>
+            </article>
+
+            <article>
+                <h2>ID and Class Attributes</h2>
+                <p>IDs and class attributes are unique identifiers that can be used in CSS to override the default style hierarchy and allow more specificity. An ID is preceded by a hash character (#) and is the strongest specificity tag in CSS, beating even attribute selectors. A class attribute is preceded by a period (.) and beats out element selectors like h1, p, and div. </p>
+            </article>
+        </main>
+
+        <footer>
+            <p>Page by Olivia Kotlarek</p>
+            <p>Checked by Megan Frentzel and Aisleen Santos</p>
+            <a href="http://validator.w3.org/check?uri=referer">Valid HTML</a>
+        </footer>
+
+    </body>
+</html>
