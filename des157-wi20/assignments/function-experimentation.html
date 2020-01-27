@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function Experimentation</title>
+</head>
+<body>
+    <h1>JS Function Experimentation</h1>
+
+    <script>
+        var myInteger = prompt("please enter a number between 1 and 15", "");
+        var myAdj = ['tall', 'wide', 'away'];
+
+        
+        if (parseInt(myInteger)) {
+            console.log("you have an integer. so cool!");
+        }
+        else {
+            console.log("you don't have an integer. better luck next time.");
+        }
+    
+        function randomInt (min, max) {
+            return Math.floor((max - min +1) * Math.random() ) + min;
+        }
+
+        function wow (int, adj){
+            console.log(`wow, you are ${int} feet ${adj[randomInt(0,adj.length-1)]}`);
+        }
+
+        wow(myInteger, myAdj)
+
+    </script>
+    
+    
+</body>
+</html>
