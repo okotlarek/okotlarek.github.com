@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Distance Converter</title>
+
+<!--/ /-------- Normalize CSS --------/ /-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+<!--/ /-------- Google Fonts --------/ /-->
+<link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap" rel="stylesheet">
+
+<!--/ /-------- My Styles --------/ /-->
+<link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<h1>Miles to Kilometers Converter</h1>
+   
+    <div class="container top">
+    <p>Type in a number of miles and click the button to convert the distance to kilometers.</p>
+       
+        <form method="post" action="somephpfile.php" id="convert">
+       
+        <input type="text" name="distance" id="distance" placeholder="distance">
+            <input type="submit" name="convertdist" value="Convert Distance">
+       
+        </form>
+    </div>
+    <div class="container bottom" id="answer">
+    <h2 class="invisible">Answer goes here</h2>
+    </div>
+   
+    <p id="directions">Press the "K" key to switch to kilometer conversion, press the "M" key to switch to mile conversion</p>
+
+<script>
+
+var myForm = document.querySelector("form");
+var text = document.querySelector("p");
+var heading = document.querySelector("h1");
+
+myForm.addEventListener("submit", convertMtoK);
+
+document.addEventListener("keydown", handleKeyPress);
+
+// Re-assigns the submit button to do whichever type of conversion
+// the user has selected, and sets the header text to reflect it.
+function handleKeyPress(event) {
+	if (event.key == "k") {
+		heading.innerHTML = "Kilometers to Miles Converter";
+		text.innerHTML = "Type in a number of kilometers and click the button to convert the distance to miles.";
+		myForm.removeEventListener("submit", convertMtoK);
+		myForm.addEventListener("submit", convertKtoM);
+	} else if (event.key == "m") {
+		heading.innerHTML = "Miles to Kilometers Converter";
+		text.innerHTML = "Type in a number of miles and click the button to convert the distance to kilometers.";
+		myForm.removeEventListener("submit", convertKtoM);
+		myForm.addEventListener("submit", convertMtoK);
+	}
+}
+
+//converts Meters to Kilometers
+function convertMtoK() {
+	event.preventDefault();
+
+	var formData = document.getElementById("distance").value;
+
+	answer.removeAttribute("invisible");
+
+	if (parseFloat(formData)){
+		var converted = formData * 1.609;
+		answer.innerHTML = `<h2>${formData} miles converts to ${converted} kilometers</h2>`;
+	} else {
+		answer.innerHTML = `<h2>Please enter a number</h2>`;
+	}
+}
+
+
+//converts Kilometers to Meters
+function convertKtoM() {
+	event.preventDefault();
+
+	var formData = document.getElementById("distance").value;
+
+	answer.removeAttribute("invisible");
+
+	if (parseFloat(formData)){
+		var converted = formData * 0.621;
+		answer.innerHTML = `<h2>${formData} kilometers converts to ${converted} miles</h2>`;
+	} else {
+		answer.innerHTML = `<h2>Please enter a number</h2>`;
+	}
+}
+
+</script>
+
+</body>
+</html>
