@@ -58,7 +58,7 @@ footer {
 
 /*type*/
 
-h1, h2, a, p {
+h1, h2, h3, a, p {
     font-family: "Open+Sans", sans-serif;
     color: #231f20;
 }
@@ -75,13 +75,20 @@ h2 {
     line-height: 1.2em;
 }
 
+h3{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2em; 
+    color: #ef4136;
+}
+
 p, nav{
     font-size: 1em;
     font-weight: 300;
     line-height: 1.6em;
 }
 
-nav a {
+a {
     text-decoration: none;
     color: #ef4136;
 }
