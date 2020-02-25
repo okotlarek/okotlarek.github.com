@@ -1,3 +1,5 @@
+//NEW FUNCTIONALITY: tracks points per turn by adding each rollSum together. Does not add points from the turn if it ends by rolling a 1.
+
 (function(){
     "use strict";
 
@@ -68,6 +70,7 @@
         }
         // if either die is a 1...
         else if(gameData.roll1 === 1 || gameData.roll2 === 1){
+            //NEW FUNCTIONALITY: tracks points per turn by adding each rollSum together. Does not add points from the turn if it ends by rolling a 1.
             gameData.score[gameData.index] -= gameData.turnSum;
             gameData.index ? gameData.index = 0 : gameData.index = 1;
             game.innerHTML += `<h2>Sorry, one of your rolls was a one, switching to ${gameData.players[gameData.index]}</h2>`;
