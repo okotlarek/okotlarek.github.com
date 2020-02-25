@@ -1,0 +1,64 @@
+body{
+    background: rgb(155, 223, 255);
+    /* background: linear-gradient(90deg, rgb(155, 223, 255), rgba(155, 223, 255, 0.2)); */
+    font-family: Lato;
+    color: rgba(41,40,97,1);
+    margin: auto;
+    margin-top: 2em;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+button{
+    background-color: rgb(113,50,137);
+    border-radius: 14px;
+    border: 1pt solid  rgba(41,40,97,1);
+    display: inline-block;
+    cursor: pointer;
+    color:  rgb(203,58,124);
+    font-family: Lato, "sans-serif";
+    font-weight: 400;
+    font-size: 1em;
+    padding: 1em 1.2em;
+    margin-right: 1em;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px rgb(113,50,137);
+}
+
+button:hover{
+    background-color:  rgba(41,40,97,1);
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+h1{
+    font-family: Lato;
+    font-weight: 400;
+    color:rgb(203,58,124);
+}
+
+h2, p{
+    font-family: Lato;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+#score{
+    width: 15vw;
+    color:rgb(203,58,124); 
+    margin-top: 2em;
+    padding-left: 1em;
+    background-color: rgb(113,50,137);
+    border: 1pt solid  rgba(41,40,97,1);
+    border-radius: 14px;
+    display: inline-block;
+}
