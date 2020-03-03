@@ -1,0 +1,15 @@
+body{
+    font-family: Lato;
+}
+
+footer {
+    font-family: Lato;
+    text-decoration: none;
+    color: gray;
+    margin: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
