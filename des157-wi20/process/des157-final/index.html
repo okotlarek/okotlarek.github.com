@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Basket of Monsters</title>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <h1>Basket of Monsters</h1>
+            <h2>A political typology quiz meets an exercise in empathy.</h2>
+            <br><br>
+            <p>Click through to learn about poltics online, your own political priorities, and how to introduce respect and reciprocity online.</p>
+        </section>
+
+        <section>
+            <h1>Did you know?</h1>
+            <p>Voting rates are consistently lower among young people</p><br><br>
+            <canvas id="myChart"></canvas>
+            <p><a class="source" href="https://www.census.gov/newsroom/blogs/random-samplings/2017/05/voting_in_america.html">U.S. Census Bureau</a></p>
+        </section>
+
+        <section>
+            <h1>Politics and Our Digital Landscape</h1>
+            <div class="textColumns">
+                <p>Social media platforms like Facebook conduct studies where they test our political participation and activism online.</p>
+                <p>In a 2009 study at UC Santa Barbara, researchers found that our political participation online correlates heavily with our political participation offline.</p><br><br>
+                <button><a href = "https://www.researchgate.net/publication/228163030_Facebook_is_Fostering_Political_Engagement_A_Study_of_Online_Social_Networking_Groups_and_Offline_Participation">Read the study</a></button>
+            </div>
+        </section>
+
+        <section>
+            <h1>Peer Influence On and Offline</h1>
+            <div class="textColumns">
+                <p>In another study conducted at UC San Diego in 2012, researchers found that people were more likely to vote if their Facebook friends selected a button that notified friends they voted.</p>
+                <p>How we conduct ourselves online, in general and politically, impacts the way others conduct themselves on and offline.</p><br><br>
+                <button><a href ="https://www.nature.com/articles/nature11421#citeas">Read the study</a></button>
+            </div>
+        </section>
+
+        <section> 
+            <h1>Bridging the Gap</h1>
+            <div>
+                <p>As our political and digital landscapes become more complicated, many think the political party divide will widen. Without empathy for others, this will surely be true.</p>
+                <p>The first step in understanding others, is understanding yourself!</p>
+            </div>
+        
+        </section>
+
+        <section>
+            <h1>Take the Quiz!</h1>
+            <div class="textColumns">
+                <p>Some people know what their political opinions are, some don't, and some are in between.</p>
+                <p>Here, we will help you define where you stand in the context of our current political landscape.</p>
+            </div>
+            <div>
+                <img src="images/monsters-14.png" width="300">
+            </div>       
+        </section>
+
+        <section>
+            <h1>Political Priorities</h1>
+            <p>Each of these issues was selected from a <a href = "https://www.pewsocialtrends.org/2019/03/21/worries-priorities-and-potential-problem-solvers/psdt-03-21-19_us_2050-02-09/">Pew Research study</a> that uncovered what issues are important to Americans based on political party.</p>
+            <p>Rank each action item based on what you think the government should spend time doing, from 1 (highest prioritiy) to 4 (lowest prioritiy).</p>
+            <p>Your cute monster character will be determined by your answers!</p>
+            <ul id="demo-2" aria-labelledby="schedule-head global-help">
+                <li role="button" id="education"> 
+                    <span class="offscreen">Reorder</span>
+                    <div>Increase Education Spending</div>
+                </li>
+                <li role="button" id="healthcare"> 
+                        <span class="offscreen">Reorder</span>
+                        <div>Implement Universal Healthcare</div>
+                </li>
+                <li role="button" id="debt"> 
+                        <span class="offscreen">Reorder</span>
+                        <div>Reduce the National Debt</div>
+                </li>
+                <li role="button" id="climate"> 
+                        <span class="offscreen">Reorder</span>
+                        <div>Fight Climate Change</div>
+                </li>
+            </ul>
+        </section>
+        
+        <section>
+            <h1 id="monsterName"></h1>
+            <p>What your answers say about you:</p>
+            <p id="persona"></p>
+            <img id="character" src="" width="300">
+        </section>
+
+        <section>
+            <h1>Moving Forward</h1>
+            <p>Now that you've thought about what your political priorities are, you are hopefully more equipped to understand where you (and others) stand within the political landscape.</p>
+            <p>In order to inspire respect and reciprocity online, it is important to conduct ourselves with empathy for others' views.</p>
+        </section>
+
+        <section>
+            <h1>Learn More</h1>
+            <p>Take Pew Research Center's Political Typology Quiz to learn even more about your own political views.</p><br><br>
+            <button><a href="https://www.people-press.org/quiz/political-typology/">Take the Quiz</a></button>
+        </section>
+    </main>
+    
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a> <br>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+    <div class="navBtns">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+    
+
+    <script src="packages/chart.js/dist/Chart.js"></script>
+    <script src="dragon-drop.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
