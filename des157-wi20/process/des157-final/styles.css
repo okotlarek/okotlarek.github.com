@@ -30,6 +30,17 @@ button:hover {
     opacity: 0.8;
 }
 
+.study {
+    background-color: rgba(255, 255, 255);
+    color: rgba(152,49,255,1);
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Open Sans;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 footer {
     position: fixed;
     text-align: left;
